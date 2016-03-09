@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="/javascripts/app.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>Please sign in</h3>
+      <form class="form">
+        <span style="color:red;font-style:italic;" id="warning">Incorrect username or password. Please try again.</span>
+        <input type="text" class="form-control" placeholder="username" id="username" required><br>
+        <input type="password" class="form-control" placeholder="password" id="password" required><br>
+        <input type="button" onclick="login()" value="Sign in" class="btn btn-primary btn-lg btn-block">
+      </form>
+    </div>
+  </body>
+    <script>
+      $(document).ready( function() {
+         if( window.location.href.indexOf('error=yes') < 0 ) {
+            $('#warning').hide();
+         }
+      } );
+    </script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="/javascripts/app.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+     <script type="text/javascript">
+    // Firefox, Google Chrome, Opera, Safari, Internet Explorer from version 9
+
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+        <h2>Tasker <small id="profile" class="pull-right" onclick="logout()"></small></h2>
+      <div class="well well-sm">
+          <form class="form-inline">
+              <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" placeholder="task"oninput="checkContent(event)">
+              </div>
+
+              <div class="form-group">
+                <label for="colorInput">Color</label>
+                <input type="color" class="form-control" id="colorCode" value="#000000" style="width:70px">
+              </div>
+
+              <div class="form-group">
+                <label for="dueDate">Due Date</label>
+                <input type="text" class="form-control" id="dueDate" placeholder="mm/dd/yyyy" oninput="checkContent(event)">
+              </div>
+              <span  class="btn btn-default" id="submitBtn" disabled="disabled">+</span>
+           </form>
+      </div>
+
+      <div class="well well-sm">
+         <form class="form-inline">
+         <input type="text" class="form-control" id="keyword" placeholder="search" oninput="listenSearch(event)" >
+          <div class="checkbox">
+              <label>
+                <input type="checkbox" id="incompleteOnly" onchange="listenComplete(event)" >Incomplete only
+              </label>
+           </div>
+           <div class="checkbox">
+              <label>
+                <input type="checkbox" id="overDueOnly" onchange="listenOverdue(event)">Over-due only
+              </label>
+           </div>
+         </form>
+      </div>
+      <div class="container" >
+          <table class="resultTable" id="resultTable">
+          </table>
+      </div>
+        <script>
+    $(document).ready( function() {
+      getPrincipal();
+      // getAll();
+    } );
+  </script>
+  </body>
+</html>

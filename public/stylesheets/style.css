@@ -1,0 +1,29 @@
+
+div.well {
+margin-top: 1em;
+}
+
+.checkbox {
+	margin-left: 10px;
+}
+
+.resultTable {
+	width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-collapse: collapse;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 3em;
+    color: #333;
+}
+
+
+
+/*.tableContainer {
+	width: 100%;
+	border: 1px solid #ccc;
+	max-height: 200px;
+	overflow: scroll;
+}*/
