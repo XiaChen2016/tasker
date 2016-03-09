@@ -1,6 +1,9 @@
 # tasker
 
 When you have installed Node.js on your computer, download this app, and by typing "npm start", you can use it in web browser.
+
+Following are the requirements for tasker:
+
 <img src="https://cloud.githubusercontent.com/assets/17659406/13649926/bbde5b50-e605-11e5-9053-6e8650f970c4.png">
 <img src="https://cloud.githubusercontent.com/assets/17659406/13649933/c5e1e5e0-e605-11e5-9e37-69ab5ac0e89e.png">
 <img src="https://cloud.githubusercontent.com/assets/17659406/13649938/cf295750-e605-11e5-8a64-981f71941090.png">
