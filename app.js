@@ -1,6 +1,5 @@
 var express = require('express');
 
-
 var path = require('path');
 var session = require('client-sessions');
 var cookieParser = require('cookie-parser');
